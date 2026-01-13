@@ -15,12 +15,28 @@ const Header = () => {
           <span className="font-display font-semibold text-lg text-foreground">OmegaGPT</span>
         </Link>
         
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#why-omegagpt" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Why OmegaGPT
+        <div className="flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-8">
+            <a href="#why-omegagpt" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+              Why OmegaGPT
+            </a>
+          </nav>
+          
+          <a 
+            href="https://www.producthunt.com/products/omegagpt-offline-ai-chat?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-omegagpt" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex-shrink-0"
+          >
+            <img 
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1049819&theme=dark&t=1768345668503" 
+              alt="OmegaGPT - Fast, Free AI Chat - 100% Offline | Product Hunt" 
+              width="200" 
+              height="43" 
+              className="h-[36px] w-auto"
+            />
           </a>
-        </nav>
-
+        </div>
       </div>
     </motion.header>
   );

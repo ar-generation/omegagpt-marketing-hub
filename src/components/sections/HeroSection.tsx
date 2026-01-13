@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="absolute top-1/3 left-1/4 w-72 h-72 bg-omega-purple/15 rounded-full blur-[120px] z-0" />
       <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-omega-glow/8 rounded-full blur-[100px] z-0" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 max-w-5xl">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
@@ -41,8 +41,8 @@ const HeroSection = () => {
               <span className="text-xs text-muted-foreground">Free During Early Access</span>
             </motion.div>
 
-            {/* Dominant headline - larger */}
-            <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-[1.05] tracking-tight">
+            {/* Headline - 2 lines */}
+            <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-6 leading-[1.05] tracking-tight">
               <span className="omega-symbol">Ω</span>megaGPT
               <br />
               <span className="text-gradient-omega">Offline AI Chat</span>
