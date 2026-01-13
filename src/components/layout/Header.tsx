@@ -16,14 +16,8 @@ const Header = () => {
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Features
-          </a>
-          <a href="#templates" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Templates
-          </a>
-          <a href="#why-offline" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Why Offline
+          <a href="#why-omegagpt" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            Why OmegaGPT
           </a>
         </nav>
 
