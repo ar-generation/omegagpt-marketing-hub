@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Wifi, Lock, Zap, Smartphone, Globe, Users } from "lucide-react";
+import { Shield, Wifi, Lock, Zap, Smartphone, Globe } from "lucide-react";
 
 const advantages = [
   {
@@ -29,13 +29,8 @@ const advantages = [
   },
   {
     icon: Globe,
-    title: "Works Anywhere",
-    description: "No signal? No problem.",
-  },
-  {
-    icon: Users,
-    title: "AI for Everyone",
-    description: "Accessible regardless of location or income.",
+    title: "Built-in Templates",
+    description: "Summaries · Translation · Task Planning",
   },
 ];
 
@@ -104,7 +99,7 @@ const WhyOfflineSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"
         >
           {advantages.map((advantage, index) => (
             <motion.div
@@ -124,6 +119,17 @@ const WhyOfflineSection = () => {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* AI for Everyone line */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-center text-muted-foreground text-sm mt-8"
+        >
+          AI for Everyone — accessible regardless of location or income.
+        </motion.p>
       </div>
     </section>
   );
