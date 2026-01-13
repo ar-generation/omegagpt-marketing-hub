@@ -68,7 +68,7 @@ const WhyOfflineSection = () => {
             Why <span className="text-gradient-omega">OmegaGPT</span>?
           </h2>
           <p className="text-muted-foreground text-base">
-            AI that respects your privacy
+            The FIRST fully offline AI chat app available on both iOS and Android
           </p>
         </motion.div>
 
