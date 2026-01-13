@@ -135,6 +135,19 @@
     box-shadow: 0 0 30px -10px hsl(156 100% 50% / 0.3);
   }
 
+  /* Primary store buttons - higher contrast for CTAs */
+  .btn-store-primary {
+    @apply inline-flex items-center gap-3 rounded-xl font-medium transition-all duration-300;
+    background: hsl(0 0% 100% / 0.08);
+    border: 1px solid hsl(0 0% 100% / 0.15);
+  }
+
+  .btn-store-primary:hover {
+    background: hsl(0 0% 100% / 0.12);
+    border-color: hsl(156 100% 50% / 0.4);
+    box-shadow: 0 0 40px -10px hsl(156 100% 50% / 0.35);
+  }
+
   .hero-bg {
     background: 
       radial-gradient(ellipse 80% 50% at 50% -10%, hsl(260 80% 30% / 0.4) 0%, transparent 50%),

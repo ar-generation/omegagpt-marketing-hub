@@ -3,43 +3,32 @@ import StoreButtons from "../StoreButtons";
 
 const CTASection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 hero-bg" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background" />
-      
-      {/* Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-omega-glow/10 rounded-full blur-[150px]" />
+    <section className="py-32 relative">
+      {/* Clean separation via spacing, not decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/5 to-background" />
 
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="max-w-2xl mx-auto text-center"
+          transition={{ duration: 0.5 }}
+          className="max-w-lg mx-auto text-center"
         >
-          <span className="omega-symbol text-6xl mb-6 block">Ω</span>
-          
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Ready to Chat <span className="text-gradient-omega">Privately</span>?
+          <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-4">
+            Your AI. Your Device.
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-10">
-            Private, accessible AI — owned by the user.
+          <p className="text-muted-foreground mb-10">
+            No accounts. No cloud. Just private AI.
           </p>
 
-          <StoreButtons className="justify-center" />
+          {/* Larger CTA buttons */}
+          <StoreButtons size="large" className="justify-center" />
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
-            className="mt-8 text-sm text-muted-foreground"
-          >
-            Free during early access. No accounts. No credit card.
-          </motion.p>
+          <p className="mt-8 text-xs text-muted-foreground/60">
+            Free during early access
+          </p>
         </motion.div>
       </div>
     </section>
