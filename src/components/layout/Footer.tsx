@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import StoreButtons from "../StoreButtons";
+import omegaLogo from "@/assets/omegagpt-logo.png";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="omega-symbol text-2xl">Ω</span>
+              <img src={omegaLogo} alt="OmegaGPT" className="h-8 w-auto" />
               <span className="font-display font-semibold text-lg text-foreground">OmegaGPT</span>
             </Link>
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
