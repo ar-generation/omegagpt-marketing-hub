@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import StoreButtons from "../StoreButtons";
 import omegaLogo from "@/assets/omegagpt-logo.png";
 
 const Footer = () => {
@@ -16,7 +15,6 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
               Private, accessible AI — owned by the user. 100% offline, no cloud, no accounts.
             </p>
-            <StoreButtons size="small" />
           </div>
 
           {/* Legal */}
@@ -57,28 +55,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-border/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-border/50">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} AR Generation. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://apps.apple.com/us/app/omegagpt-offline-ai-chat/id6751235569"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              App Store
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.argeneration.privategpt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-            >
-              Google Play
-            </a>
-          </div>
         </div>
       </div>
     </footer>
